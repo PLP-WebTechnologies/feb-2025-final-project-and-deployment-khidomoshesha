@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Unlocking the Magic of CSS!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header id="main-header">
+        <h1><i>Unlocking the Magic of CSS!</i></h1>
+    </header>
+
+    <nav id="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">The Art of Styling</a>
+        <a href="services.html">Our Creative Services</a>
+        <a href="contact.html">Contact Us</a>
+        <button id="theme-toggle-button" title="Toggle light/dark mode">☀️</button>
+    </nav>
+
+    <main>
+        <section class="section" id="contact-form-section">
+            <h2>Get in Touch</h2>
+            <p>Have a question or want to discuss a project? Fill out the form below!</p>
+            <form id="contactForm">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div>
+                    <label for="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="2" required></textarea>
+                </div>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+            <div id="form-status" role="status" aria-live="polite"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> My Colorful Website. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
